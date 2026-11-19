@@ -190,17 +190,17 @@ export const company: Company = {
     bio: {
       fr: [
         "Ingénieur agronome, Rabeh Belaid dirige l'entreprise et en pilote les chantiers.",
-        "Son parcours comprend une activité d'ingénieur technico-commercial dans l'équipement d'irrigation (Tunis Drip) et la conduite technique d'exploitations agricoles et biologiques — arboriculture, oléiculture, céréaliculture et cultures maraîchères — dans les régions de Zaghouan, Sousse et Bizerte.",
+        "Son parcours comprend la conduite technique d'exploitations agricoles et biologiques — arboriculture, oléiculture, céréaliculture et cultures maraîchères — dans les régions de Zaghouan, Sousse et Bizerte.",
         "Il est l'auteur d'une publication sur la contribution de l'eau virtuelle à la sécurité hydrique en Tunisie, à partir d'études de cas d'exploitations céréalières et oléicoles de Zaghouan.",
       ],
       ar: [
         "رابح بلعيد مهندس فلاحي، يتولى إدارة المؤسسة والإشراف على حظائرها.",
-        "يشمل مساره المهني العمل كمهندس تقني تجاري في مجال تجهيزات الري لدى شركة Tunis Drip، والإشراف الفني على ضيعات فلاحية وبيولوجية — في الأشجار المثمرة والزياتين والحبوب والزراعات الخضرية — بجهات زغوان وسوسة وبنزرت.",
+        "يشمل مساره المهني الإشراف الفني على ضيعات فلاحية وبيولوجية — في الأشجار المثمرة والزياتين والحبوب والزراعات الخضرية — بجهات زغوان وسوسة وبنزرت.",
         "وله منشور حول مساهمة المياه الافتراضية في تعزيز الأمن المائي في تونس، انطلاقا من دراسة حالات لضيعات الحبوب والزياتين بزغوان.",
       ],
       en: [
         "An agricultural engineer, Rabeh Belaid leads the company and oversees its sites.",
-        "His career includes technical sales engineering for irrigation equipment at Tunis Drip and the technical management of conventional and organic farms — orchards, olive groves, cereals and vegetable crops — in the Zaghouan, Sousse and Bizerte regions.",
+        "His career includes the technical management of conventional and organic farms — orchards, olive groves, cereals and vegetable crops — in the Zaghouan, Sousse and Bizerte regions.",
         "He is the author of a publication on the contribution of virtual water to water security in Tunisia, based on case studies of cereal and olive farms in Zaghouan.",
       ],
     },

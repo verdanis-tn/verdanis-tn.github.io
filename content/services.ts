@@ -170,9 +170,9 @@ export const services: Service[] = [
       en: "Irrigation and Agronomic Expertise",
     },
     summary: {
-      fr: "L'entreprise est dirigée par un ingénieur agronome. Sa formation, enrichie d'une expérience dans l'équipement d'irrigation et la conduite d'exploitations, éclaire chacune de nos interventions sur le végétal.",
-      ar: "يتولى إدارة المؤسسة مهندس فلاحي، تُثري تكوينَه خبرةٌ ميدانية في تجهيزات الري وتسيير الضيعات الفلاحية، وهو ما ينعكس على كل تدخلاتنا في الوسط النباتي.",
-      en: "The company is led by an agricultural engineer whose background in irrigation equipment and farm management informs every intervention we carry out on living plants.",
+      fr: "L'entreprise est dirigée par un ingénieur agronome. Sa formation, enrichie d'une expérience de terrain dans la conduite d'exploitations agricoles, éclaire chacune de nos interventions sur le végétal.",
+      ar: "يتولى إدارة المؤسسة مهندس فلاحي، تُثري تكوينَه خبرةٌ ميدانية في تسيير الضيعات الفلاحية، وهو ما ينعكس على كل تدخلاتنا في الوسط النباتي.",
+      en: "The company is led by an agricultural engineer whose hands-on experience in farm management informs every intervention we carry out on living plants.",
     },
     itemsHeading: {
       fr: "Expertise du dirigeant",
