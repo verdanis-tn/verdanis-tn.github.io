@@ -1,0 +1,36 @@
+{
+  "name": "verdanis-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "VERDANIS — Paysages & Infrastructures. Trilingual (FR/AR/EN) company website, Next.js + Sanity.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "seed": "tsx scripts/sanity-seed.ts",
+    "build:pages": "node scripts/build-pages.mjs"
+  },
+  "dependencies": {
+    "@sanity/client": "^8.16.0",
+    "@sanity/image-url": "^2.2.0",
+    "next": "^16.4.6",
+    "nodemailer": "^10.6.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^22",
+    "@types/nodemailer": "^8.0.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4.3.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.9"
+  }
+}

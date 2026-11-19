@@ -1,0 +1,65 @@
+[
+  {
+    "file": "green-spaces.jpg",
+    "description": "Gardener trimming a hedge in a rose garden",
+    "photographer": "Nikita Khavkin",
+    "source_url": "https://unsplash.com/photos/jifYc1gYfrw",
+    "license": "Unsplash License"
+  },
+  {
+    "file": "roadside.jpg",
+    "description": "Road with palm trees and shadows beside a stone arch, Mediterranean",
+    "photographer": "Wolfgang Weiser",
+    "source_url": "https://unsplash.com/photos/hykde4DQonI",
+    "license": "Unsplash License"
+  },
+  {
+    "file": "highway.jpg",
+    "description": "Aerial view of a highway crossing farmland",
+    "photographer": "Bernd Dittrich",
+    "source_url": "https://unsplash.com/photos/mTfrE7ZDEnI",
+    "license": "Unsplash License"
+  },
+  {
+    "file": "vegetation-clearing.jpg",
+    "description": "Worker using a brush cutter on a grass bank along a wall",
+    "photographer": "proudlyswazi",
+    "source_url": "https://unsplash.com/photos/8XMD4eMujzs",
+    "license": "Unsplash License"
+  },
+  {
+    "file": "public-space.jpg",
+    "description": "Palm-lined seafront esplanade at sunset, empty",
+    "photographer": "Ruben Aster",
+    "source_url": "https://unsplash.com/photos/Bqs6O6trrOA",
+    "license": "Unsplash License"
+  },
+  {
+    "file": "irrigation.jpg",
+    "description": "Drip lines and micro-sprinklers watering young crop rows",
+    "photographer": "philip junior mail",
+    "source_url": "https://unsplash.com/photos/BpUkWK6hfJA",
+    "license": "Unsplash License"
+  },
+  {
+    "file": "olive-landscape.jpg",
+    "description": "Rows of olive trees with mountains under a dramatic sky",
+    "photographer": "Nima Ghazaei",
+    "source_url": "https://unsplash.com/photos/w7M9IvG7HxU",
+    "license": "Unsplash License"
+  },
+  {
+    "file": "palm-avenue.jpg",
+    "description": "Palm-lined promenade with cycle path and buildings",
+    "photographer": "Roberto Gomis Garcia",
+    "source_url": "https://unsplash.com/photos/cSGnsxNWbJc",
+    "license": "Unsplash License"
+  },
+  {
+    "file": "foliage.jpg",
+    "description": "Olive branch with green olives against deep blue sky",
+    "photographer": "Susana Bartolome",
+    "source_url": "https://unsplash.com/photos/-ZJ9fM0kgZM",
+    "license": "Unsplash License"
+  }
+]

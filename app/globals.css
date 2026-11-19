@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   VERDANIS design tokens (provisional brand — see docs/BRAND.md)
+   ------------------------------------------------------------------ */
+@theme {
+  --color-forest: #17372f;
+  --color-forest-deep: #0f2620;
+  --color-moss: #34594a;
+  --color-gold: #b5a078;
+  --color-gold-soft: #d8cbb0;
+  --color-ivory: #f6f5f0;
+  --color-sand: #ebe7dc;
+  --color-anthracite: #252b27;
+  --color-stone: #5e6660;
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  --font-body: var(--font-manrope), system-ui, sans-serif;
+  --font-heading: var(--font-fraunces), Georgia, serif;
+}
+
+/* Arabic: a single, highly legible family for headings and body. */
+:root[dir="rtl"] {
+  --font-body: var(--font-plex-arabic), var(--font-manrope), system-ui, sans-serif;
+  --font-heading: var(--font-plex-arabic), var(--font-fraunces), serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-anthracite);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-forest-deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Arabic needs more line-height and no letter-spacing on caps-style labels. */
+[dir="rtl"] body { line-height: 1.85; }
+[dir="rtl"] .tracking-label { letter-spacing: 0 !important; }
+
+@layer components {
+  .container-x {
+    width: 100%;
+    max-width: 82rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .container-x { padding-inline: 2.5rem; }
+  }
+
+  .kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-moss);
+  }
+  .kicker::before {
+    content: "";
+    width: 2rem;
+    height: 1px;
+    background: var(--color-gold);
+  }
+  [dir="rtl"] .kicker { letter-spacing: 0; font-size: 0.875rem; }
+  .on-dark .kicker { color: var(--color-gold-soft); }
+
+  .h-display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+  }
+  [dir="rtl"] .h-display { font-weight: 600; line-height: 1.35; letter-spacing: 0; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.95rem 1.6rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: background-color 0.3s var(--ease-out-soft), color 0.3s var(--ease-out-soft),
+      border-color 0.3s var(--ease-out-soft);
+  }
+  .btn-gold { background: var(--color-gold); color: var(--color-forest-deep); }
+  .btn-gold:hover { background: var(--color-gold-soft); }
+  .btn-forest { background: var(--color-forest); color: var(--color-ivory); }
+  .btn-forest:hover { background: var(--color-moss); }
+  .btn-ghost { border: 1px solid currentColor; }
+  .btn-ghost:hover { background: rgb(246 245 240 / 0.1); }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.4s var(--ease-out-soft);
+  }
+  [dir="rtl"] .link-underline { background-position: 100% 100%; }
+  .link-underline:hover { background-size: 100% 1px; }
+
+  .prose-body p + p { margin-top: 1.1em; }
+
+  /* Field styling for the inquiry form */
+  .field {
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgb(37 43 39 / 0.18);
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
+    color: var(--color-anthracite);
+    transition: border-color 0.2s;
+  }
+  .field:focus { border-color: var(--color-moss); outline: none; box-shadow: 0 0 0 3px rgb(52 89 74 / 0.15); }
+  .field[aria-invalid="true"] { border-color: #a4423a; }
+}
+
+/* Per-project colour grading on illustrative visuals */
+.tone-dawn { filter: saturate(0.9) sepia(0.12) hue-rotate(-6deg) brightness(1.02); }
+.tone-noon { filter: saturate(0.85) contrast(1.05); }
+.tone-dusk { filter: saturate(0.8) sepia(0.22) contrast(1.05) brightness(0.92); }
+.tone-mist { filter: saturate(0.6) contrast(0.95) brightness(1.04); }
+.tone-gold { filter: sepia(0.28) saturate(0.95) brightness(0.98); }
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-rise { animation: rise 1s var(--ease-out-soft) both; }
+.delay-1 { animation-delay: 0.12s; }
+.delay-2 { animation-delay: 0.24s; }
+.delay-3 { animation-delay: 0.36s; }
+
+@keyframes slowzoom {
+  from { transform: scale(1.08); }
+  to { transform: scale(1); }
+}
+.animate-slowzoom { animation: slowzoom 9s var(--ease-out-soft) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

@@ -1,0 +1,30 @@
+# deps / build
+node_modules/
+.next/
+out/
+studio/node_modules/
+studio/dist/
+.sanity/
+*.tsbuildinfo
+next-env.d.ts
+
+# local Node runtime (conda env)
+.nodenv/
+.nodeenv/
+
+# env & secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# raw client material never goes in the repo (contracts, amounts, CVs)
+private/
+
+# static export
+out/
+.pages-stash/
